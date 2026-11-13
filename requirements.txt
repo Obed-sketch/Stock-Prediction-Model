@@ -2,11 +2,14 @@ yfinance
 pandas
 numpy
 praw
-snscrape
 textblob
-pandas-ta
 tensorflow
 matplotlib
 scikit-learn
-flask
-joblib
+# Optional (Nov 2026): pandas-ta -- create_features() uses it when
+# installed and falls back to built-in RSI/MACD equivalents when not.
+# Optional and effectively defunct: snscrape -- Twitter/X scraping has
+# been broken by upstream changes; demo mode does not need it, and the
+# live path continues Reddit-only if tweet collection fails.
+# flask/joblib are only used by the "enhanced" fragment's deployment
+# section, not by the main script.
