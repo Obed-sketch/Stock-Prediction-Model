@@ -3,7 +3,9 @@
 Meme Stock Predictor using Reddit/Twitter Hype and Technical Indicators
 """
 # %% [1] Install Required Libraries
-!pip install yfinance praw snscrape pandas-ta numpy tensorflow matplotlib textblob
+# (Was a Colab-style "!pip install ..." line, which is a SyntaxError in a
+# plain .py file. Install the dependencies with:)
+#     pip install -r requirements.txt
 
 # %% [2] Import Libraries
 import yfinance as yf #Fetch stock data from Yahoo Finance

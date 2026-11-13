@@ -1,8 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 Enhanced Meme Stock Predictor with Cross-Validation, Backtesting, and Deployment
+
+FRAGMENT -- NOT A STANDALONE SCRIPT (header added during code repair).
+This file is a continuation of Meme_Stock_Prediction_Model.py: its main
+block uses `features`, `ticker`, `MinMaxScaler`, `create_lstm_model` and
+`plt` from that file, and its deployment section at import time loads
+`lstm_model.h5` / `scaler.pkl` artifacts that only exist after the main
+script has been run. It defines reusable pieces (cross-validation trainer,
+Backtester, efficiency report) but cannot be run or even imported alone.
 """
 # %% [1] Additional Imports
+import numpy as np  # used by the helpers below; previously only available via the main file
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import pickle

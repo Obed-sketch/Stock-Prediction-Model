@@ -1,0 +1,12 @@
+yfinance
+pandas
+numpy
+praw
+snscrape
+textblob
+pandas-ta
+tensorflow
+matplotlib
+scikit-learn
+flask
+joblib
